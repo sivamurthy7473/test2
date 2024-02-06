@@ -15,7 +15,7 @@ pipeline {
              
             steps(nsibleplaybook) {
                 
-                sh script: 'cd sangamesh/test2/tomcat && ansible-playbook -i hosts ubuntu.yaml'
+                sh script: 'cd /var/lib/jenkins/sangamesh/test2/tomcat && ansible-playbook -i hosts ubuntu.yaml'
             }
 
     }
