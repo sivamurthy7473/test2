@@ -1,6 +1,6 @@
 pipeline {
     agent {
-         label 'ansible' 
+         label 'any' 
         }
     triggers{
         pollSCM ('* * * * *')
@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-              git url: 'https://github.com/sangamesh00/test.git',
+              git url: 'https://github.com/sivamurthy7473/test2.git',
               branch: 'master'
             }
         }
