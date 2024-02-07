@@ -15,7 +15,7 @@ pipeline {
              
             steps(nsibleplaybook) {
                 
-                sh script: 'cd /var/lib/jenkins/test2/tomcat && ansible-playbook -i hosts ubuntu.yaml'
+                sh script: 'cd /home/devops/test2/tomcat && ansible-playbook -i hosts ubuntu.yaml'
             }
 
     }
